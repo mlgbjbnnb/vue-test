@@ -1,14 +1,6 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'echo "Hello jbnnb"'
-		sh '''
-			echo "Run command ls"
-			ls -a
-		'''
-            }
-        }
-    }
+node {
+  stage('Checkout'){
+    echo "lalalalla"
+    currentResult.result=false
+  }
 }
